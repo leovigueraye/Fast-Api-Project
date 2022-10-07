@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # if main inside folder, folder.main:app
 # api docs: /docs, /redoc
 
-# tells sqlzlchemy to create tables in model.py
+# tells sqlalchemy to create tables in model.py
 # models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
