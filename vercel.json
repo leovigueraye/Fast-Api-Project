@@ -1,8 +1,11 @@
 {
     "builds": [
-      {"src": "/server/api.py", "use": "@now/python"}
+      {"src": "/app/main.py", "use": "@vercel/python"}
     ],
     "routes": [
-      {"src": "/(.*)", "dest": "app/main.py"}
+      {"src": "/(.*)", "dest": "app/main.py"},
+      {"src": "/docs", "dest": "app.py" },
+      {"src": "/redocs", "dest": "app.py" },
+		  {"src": "/openapi.json", "dest": "app.py"}
     ]
   }
