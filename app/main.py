@@ -14,7 +14,51 @@ from fastapi.middleware.cors import CORSMiddleware
 # tells sqlalchemy to create tables in model.py
 # models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
+description = """
+SocialMediaApp API helps you do awesome stuff. 🚀
+
+## Posts
+
+You will be able to:
+
+* **Get posts**. 
+* **Create posts**. 
+* **Get one post**. 
+* **Update post**. 
+* **Delete post**. 
+
+## Users
+
+You will be able to:
+
+* **Create user**.
+* **Get user**.
+
+## Authentication
+
+You can **authenticate a user**.
+
+## Vote
+
+You can **vote a users post**.
+"""
+
+
+app = FastAPI(
+    title="SocialMediaApp",
+    description=description,
+    version="0.0.1",
+    terms_of_service="http://example.com/terms/",
+    contact={
+        "name": "Leonard the Amazing",
+        "url": "https://leovigueraye.netlify.app/",
+        "email": "leguriase98@gmail.com",
+    },
+    license_info={
+        "name": "Apache 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
+    },
+)
 
 # *: all websites can acces this api
 origins = ["*"]
