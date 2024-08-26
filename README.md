@@ -4,7 +4,7 @@
 
 ## 1) Post route
 
-#### This route is reponsible for creating post, deleting post, updating post and Checkinh post
+#### This route is reponsible for creating post, deleting post, updating post and Checking post
 
 ## 2) Users route
 
@@ -16,7 +16,7 @@
 
 ## 4) Vote route
 
- #### This route is about likes or vote system and this route contain code for upvote or back vote there is not logic about down vote
+ #### This route is about likes or vote system and this route contain code for upvote or back vote
 
 # how to run locally
 First clone this repo 
